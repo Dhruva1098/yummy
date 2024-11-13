@@ -1,0 +1,54 @@
+.panda-offcanvas {
+  max-width: 70% !important;
+}
+.carousel-item {
+  background-color: #fceae8;
+}
+.category h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  width: 65%;
+}
+.category img {
+  width: 35%;
+}
+.category1 {
+  background-color: #ffa500;
+}
+.category2 {
+  background-color: #da70d6;
+}
+.category3 {
+  background-color: #0000ff;
+}
+.subscribe_now {
+  background-color: #fceae8;
+}
+.panda-btn-warning {
+  background-image: linear-gradient(to bottom, #ff589b 0%, #ff136f 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 25px;
+  transition: background-image 1s linear;
+}
+.panda-btn-warning a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.panda-btn-warning:hover {
+  background-image: linear-gradient(to bottom, #ff136f 0%, #ff589b 100%);
+  transition: 0.5s linear;
+}
+.panda-btn-warning:hover a {
+  color: #ffffff;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5% !important;
+}
+footer p {
+  font-size: 13px;
+}
