@@ -1,4 +1,20 @@
 package com.inventory.Inventory.model;
 
-public class Category {
+import jakarta.persistence.*;
+import lombok.Data;
+
+import java.util.Set;
+@Entity
+@Data
+public class Category
+{
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private int id;
+private String name;
+
+@OneToMany(mappedBy = "category",
+        cascade = CascadeType.ALL,
+        fetch = FetchType.LAZY)
+private Set<Product> products;
 }
