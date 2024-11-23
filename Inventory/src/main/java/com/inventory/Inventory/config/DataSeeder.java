@@ -42,35 +42,35 @@ public class DataSeeder implements CommandLineRunner {
         Product phone = new Product();
         phone.setName("Phone");
         phone.setDescription("smartphone with amazing features. Very new");
-        phone.setImageUrl("https://placehold.co/600x400");
+        phone.setImageUrl("https://ik.imagekit.io/3dqckpw4d/upload/1694593711Untitled%20design%20(21).png");
         phone.setPrice(75000.00);
         phone.setCategory(electronics);
 
         Product laptop = new Product();
         laptop.setName("Laptop");
         laptop.setDescription("new laptop with amazing features. Latest model");
-        laptop.setImageUrl("https://placehold.co/600x400");
+        laptop.setImageUrl("https://quicktech.in/cdn/shop/files/MBP14-inch_M3Pro_2.jpg?v=1704279230&width=1445");
         laptop.setPrice(125000.00);
         laptop.setCategory(electronics);
 
         Product windBreaker = new Product();
         windBreaker.setName("Wind Breaker");
         windBreaker.setDescription("Black coloured wind cheater");
-        windBreaker.setImageUrl("https://placehold.co/600x400");
+        windBreaker.setImageUrl("https://cdn.staticans.com/image/tr:e-sharpen-01,h-1355,w-1080,cm-pad_resize/catalog/adventuras/product/KE3972-396/KE3972-396-1.jpg");
         windBreaker.setPrice(15000.00);
         windBreaker.setCategory(clothing);
 
         Product jeans = new Product();
         jeans.setName("Jeans");
         jeans.setDescription("Blue coloured denim jeans");
-        jeans.setImageUrl("https://placehold.co/600x400");
+        jeans.setImageUrl("https://levi.pt/content/img/900x1200/levis_jeam_masculino_501-original-fit-jeans-00501-0114_stonewash_9.jpg");
         jeans.setPrice(2500.00);
         jeans.setCategory(clothing);
 
         Product stove = new Product();
         stove.setName("Stove");
         stove.setDescription("Stove with amazing features. Instant defrost. Black");
-        stove.setImageUrl("https://placehold.co/600x400");
+        stove.setImageUrl("https://glenindia.com/cdn/shop/files/1_e5c26f20-0562-4456-81b2-a44ed07af34a_1200x1200.webp?v=1708924690");
         stove.setPrice(35000.00);
         stove.setCategory(home);
 
