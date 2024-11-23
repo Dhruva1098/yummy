@@ -7,7 +7,7 @@ import CategoryFilter from './CategoryFilter';
 function App() {
   const [products, setProducts] = useState([]);
   const [categories, setCateories] = useState([]);
-  const [selectedCategories, setSelectedCategories] = useState(null);
+  const [selectedCategory, setSelectedCategories] = useState(null);
   const [searchTerm, setsetSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState("asc");
   //call api, fetch product data
@@ -30,8 +30,12 @@ function App() {
   const handleCategorySelect = (categoryId) => {
     setSelectedCategories(categoryId ? Number(categoryId) : null);
   };
-
-
+  const filteredProducts = products.filter(
+    product => {
+      return(
+        selectedCategory ? product.category.id == selectedCategory:true
+      )
+    });
   return (
     <div className='container'>
       <h1 className='my-4'>Product Catalog</h1>
@@ -50,8 +54,8 @@ function App() {
         </div>
       </div>
       <div>
-        {products.length ? (
-          <ProductList products={products}/>
+        {filteredProducts.length ? (
+          <ProductList products={filteredProducts}/>
         ) : (
           <p>No products found</p>
         )}
